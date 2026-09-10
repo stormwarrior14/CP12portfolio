@@ -1,4 +1,4 @@
-# CP11portfolio
+# CP12portfolio
 
 ## About Me
 Hi, I'm Hayun Park, and I'm taking Computer Programming 12 this semester.
