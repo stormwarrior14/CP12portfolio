@@ -173,7 +173,7 @@ def starting_cave():
                 starting_cave()
                 return
             locked_door_cave()
-        elif first_direction == "left" and "key" not in inventory:
+        else:
             print("\n1. Take the left path")
             print("2. Take the right path")
             print("3. Check inventory")
@@ -190,20 +190,6 @@ def starting_cave():
             elif choice == "2":
                 first_direction = "right"
                 locked_door_cave()
-        else:
-            print("You have already explored the right path.")
-            print("The only unexplored path is the left path.")
-            print("\n1. Take the left path")
-            print("2. Check inventory")
-            choice = bahhh(
-                "\nWhat do you do? ",
-                ["1", "2"]
-            )
-            if choice == "2":
-                show_inventory()
-                starting_cave()
-                return
-            flooded_tunnel()
 
 #----------------------------------
 #FLOODED TUNNEL
@@ -558,10 +544,13 @@ def locked_door_cave():
         print("\nYou grab the door handle and pull.")
         print("The door is locked.")
         print("You cannot open it.")
+        time.sleep(0.8)
         locked_door_cave()
+        return
     elif choice == "2":
         print("\nYou leave the locked door behind.")
         starting_cave()
+        return
     elif choice == "3":
         show_inventory()
         item = use_inventory_item()
@@ -573,6 +562,7 @@ def locked_door_cave():
         else:
             print("\nThat item cannot unlock the door.")
             locked_door_cave()
+            return
 
 #----------------------------------
 #GAME START
