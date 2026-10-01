@@ -104,7 +104,6 @@ def suffocation(current_health, damage_amount, player_name):
 #WATER ESCAPE THINGIE
 #----------------------------------
 def escape_water():
-    print("\nYou dive underwater!") #tells player they in water
     print("SPAM E TO RESURFACE!") #tells how to escape
     required_presses = 10 #needs ten presses
     presses = 0
