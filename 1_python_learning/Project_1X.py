@@ -63,7 +63,7 @@ def show_inventory():
     else:
         print("\n--- INVENTORY ---")
         for item in inventory: # Goes through every item currently in the inventory.
-            print(item + ":", inventory[item]) # Prints the item name and how many the player has.
+            print(item) # Prints the item name and how many the player has.
     print("Inventory space remaining:", inventory_space, "/ 10") # Shows how many inventory spaces remain.
 
 def use_inventory_item():
