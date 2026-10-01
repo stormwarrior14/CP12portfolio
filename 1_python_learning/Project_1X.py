@@ -150,6 +150,7 @@ def starting_cave():
         )
         if choice == "3":
             show_inventory()
+            time.sleep(0.8)
             starting_cave()
             return
         elif choice == "1":
@@ -170,6 +171,7 @@ def starting_cave():
             )
             if choice == "2":
                 show_inventory()
+                time.sleep(0.8)
                 starting_cave()
                 return
             locked_door_cave()
@@ -182,6 +184,7 @@ def starting_cave():
                 ["1", "2", "3"])
             if choice == "3":
                 show_inventory()
+                time.sleep(0.8)
                 starting_cave()
                 return
             elif choice == "1":
@@ -267,6 +270,7 @@ def flooded_tunnel():
     elif choice == "3":
         print("\nYou decide not to risk the water.")
         print("You return to the previous cave.")
+        time.sleep(0.8)
         starting_cave()
         return
 #----------------------------------
@@ -274,6 +278,7 @@ def flooded_tunnel():
 #----------------------------------
     elif choice == "4":
         show_inventory()
+        time.sleep(0.8)
         flooded_tunnel()
         return
 #----------------------------------
@@ -294,12 +299,15 @@ def flooded_tunnel():
         )
         print("The tunnel becomes deeper and darker.")
         print("Eventually, your feet touch solid ground.")
+        time.sleep(0.8)
         skeleton_chamber()
     elif choice == "2":
         print("\nYou decide to leave the flooded tunnel.")
+        time.sleep(0.8)
         starting_cave()
     elif choice == "3":
         show_inventory()
+        time.sleep(0.8)
         flooded_tunnel_after_crossing()
 #----------------------------------
 #AFTER SWIMMING FOR BIT
@@ -316,12 +324,15 @@ def flooded_tunnel_after_crossing():
     if choice == "1":
         print("\nYou swim across the flooded tunnel.")
         print("You safely reach the other side.")
+        time.sleep(0.8)
         skeleton_chamber()
     elif choice == "2":
         print("\nYou leave the flooded tunnel.")
+        time.sleep(0.8)
         starting_cave()
     else:
         show_inventory()
+        time.sleep(0.8)
         flooded_tunnel_after_crossing()
 #----------------------------------
 # SKELETON CHAMBER
@@ -356,16 +367,21 @@ def skeleton_chamber():
             ["1", "2", "3"]
         )
         if choice == "1":
+            time.sleep(0.8)
             trap_door()
         elif choice == "2":
+            time.sleep(0.8)
             flooded_tunnel_return()
         else:
             show_inventory()
+            time.sleep(0.8)
             skeleton_chamber()
     elif choice == "2":
+        time.sleep(0.8)
         trap_door()
     elif choice == "3":
         show_inventory()
+        time.sleep(0.8)
         skeleton_chamber()
 #----------------------------------
 # TRAP DOOR
@@ -386,12 +402,15 @@ def trap_door():
         ["1", "2", "3"]
     )
     if choice == "1":
+        time.sleep(0.8)
         prisoner_cell()
     elif choice == "2":
         print("\nYou decide not to open the trap door.")
+        time.sleep(0.8)
         flooded_tunnel_return()
     else:
         show_inventory()
+        time.sleep(0.8)
         trap_door()
 #----------------------------------
 # PRISONER CELL
@@ -428,12 +447,16 @@ def prisoner_cell():
         )
         if choice == "1":
             print("\nYou decide to leave the prisoner behind.")
+            time.sleep(0.8)
             prisoner_cell_leave()
         else:
+            time.sleep(0.8)
             use_item_for_prisoner()
     elif choice == "2":
+        time.sleep(0.8)
         use_item_for_prisoner()
     else:
+        time.sleep(0.8)
         prisoner_cell_leave()
 #----------------------------------
 #WASTE KEY
@@ -453,6 +476,7 @@ def use_item_for_prisoner():
         print("\nThe prisoner steps out of the cell.")
         print('"Thank you."')
         print('"Follow me."')
+        time.sleep(0.8)
         prisoner_choice()
     else:
         print("\nThat item cannot help the prisoner.")
@@ -463,8 +487,10 @@ def use_item_for_prisoner():
             ["1", "2"]
         )
         if choice == "1":
+            time.sleep(0.8)
             use_item_for_prisoner()
         else:
+            time.sleep(0.8)
             prisoner_cell_leave()
 #----------------------------------
 # PRISONER
@@ -491,6 +517,7 @@ def prisoner_choice():
             "You make it safely back to the cave "
             "where you woke up."
         )
+        time.sleep(0.8)
         starting_cave()
     elif choice == "2":
         print("\nYou decline the prisoner's offer.")
@@ -501,14 +528,17 @@ def prisoner_choice():
             ["1"]
         )
         if choice == "1":
+            time.sleep(0.8)
             flooded_tunnel_return()
     else:
         show_inventory()
+        time.sleep(0.8)
         prisoner_choice()
 
 def prisoner_cell_leave():
     print("\nYou leave the prisoner behind.")
     print("You climb back up to the massive chamber.")
+    time.sleep(0.8)
     flooded_tunnel_return()
 def flooded_tunnel_return():
     print("\nYou return to the massive chamber.")
@@ -518,6 +548,7 @@ def flooded_tunnel_return():
         "You make it safely to the cave "
         "where you first woke up."
     )
+    time.sleep(0.8)
     starting_cave()
 #----------------------------------
 # LOCKED DOOR CAVE
@@ -549,6 +580,7 @@ def locked_door_cave():
         return
     elif choice == "2":
         print("\nYou leave the locked door behind.")
+        time.sleep(0.8)
         starting_cave()
         return
     elif choice == "3":
@@ -561,6 +593,7 @@ def locked_door_cave():
             return
         else:
             print("\nThat item cannot unlock the door.")
+            time.sleep(0.8)
             locked_door_cave()
             return
 
