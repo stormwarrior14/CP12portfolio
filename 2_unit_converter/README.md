@@ -45,4 +45,4 @@ Run "run_this.py" to start the program
 
 ## AI Collaboration
 | What I asked | What came back | What I kept / changed, and why |
-|---|---|---|
+|Asked it to create a dictionary with different units and the conversion factors based on the base unit of that category (length, mass, temperature, volume, time)|a dictionary called "UNITS" containing exactly what i asked|kept the entire dictionary with the units and conversion factors|
