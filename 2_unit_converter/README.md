@@ -31,7 +31,12 @@
 ## Debugger Walkthrough
 - Had to add a separate temperature specific conversion section inside the conversion functions because the general equation doesn't work for temperature
 - had an issue with python 3.9.6 interpreter that my mac had by default so i had to install python 3.15 for the tkinter display to work properly (it was previously displaying a grey window with none of the bottons visible)
-- Had an issue where the converter was allowing the user to improperly convert a value in a unit of a one category to a unit in a different category, resulting in a coversion that makes no sense. (SHOWN IN THE SCREENSHOT) ![alt text](image.png) So, I made it so the conversions only worked between units of the same category by adding the following if statement into the unit coverting function (SEE SCREENSHOT) ![alt text](image2.png) Also, added a try except into gui.py so the error message is displayed in the gui and the user can see what they did wrong ![alt text](image3.png)
+- Had an issue where the converter was allowing the user to improperly convert a value in a unit of a one category to a unit in a different category, resulting in a coversion that makes no sense. (SHOWN IN THE SCREENSHOT) ![alt text](image.png)
+So, I made it so the conversions only worked between units of the same category by adding the following if statement into the unit coverting function (SEE SCREENSHOT) ![alt text](image2.png)
+Also, added a try except into gui.py so the error message is displayed in the gui and the user can see what they did wrong ![alt text](image3.png)
+
+## Tests
+![alt text](test1.png)
 
 ## How to Run
 Run "run_this.py" to start the program
@@ -44,3 +49,4 @@ Run "run_this.py" to start the program
 |---|---|---|---|
 | 1 | Asked it to create a dictionary with different units and the conversion factors based on the base unit of that category (length, mass, temperature, volume, time) | a dictionary called "UNITS" containing exactly what i asked | kept the entire dictionary with the units and conversion factors |
 | 2 | Asked it to make the textboxes bigger because the way i had made them were way too small and hard to read | ipady = 8, width = 25, geometry = (440x400) | kept the changes as it looked a lot better |
+| 3 | Asked it to do conversion calculations so that I can use it to make tests in test_converter.py (since i need to put in what the results need to be in order to run the tests) | did random unit conversions and gave them to me | took all of them and used them to run the tests |
