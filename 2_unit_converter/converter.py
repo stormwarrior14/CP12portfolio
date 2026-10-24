@@ -63,11 +63,11 @@ def convert_units(value, from_unit, to_unit):  # converts between units
     base_value = to_base(value, from_unit)  # converts to base unit
     result = from_base(base_value, to_unit)  # converts to target unit
 
-    print(result)
+    # print(result)
     return result  # returns the final result
 
-value = float(input("value: "))
-from_unit = input("unit: ")
-to_unit = input("target: ")
+# value = float(input("value: "))
+# from_unit = input("unit: ")
+# to_unit = input("target: ")
 
-convert_units(value, from_unit, to_unit)
+# convert_units(value, from_unit, to_unit)

@@ -35,7 +35,8 @@
 | 1 |  |  |  |  |  |
 
 ## Debugger Walkthrough
-*Screenshot of a breakpoint, what the variables showed, what you learned.*
+Had to add a separate temperature specific conversion section inside the conversion functions because the general equation doesn't work for temperature
+
 
 ## Mentoring Log
 
@@ -49,3 +50,4 @@ Run "run_this.py" to start the program
 | # | What I asked | What came back | What I kept / changed |
 |---|---|---|---|
 | 1 | Asked it to create a dictionary with different units and the conversion factors based on the base unit of that category (length, mass, temperature, volume, time) | a dictionary called "UNITS" containing exactly what i asked | kept the entire dictionary with the units and conversion factors |
+| 2 | Asked it to make the textboxes bigger because the way i had made them were way too small and hard to read | ipady = 8, width = 25, geometry = (440x400) | kept the changes as it looked a lot better |
