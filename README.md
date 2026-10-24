@@ -4,7 +4,7 @@
 Hi, I'm Hayun Park, and I'm taking Computer Programming 12 this semester.
 
 ## My Work
-0_getting_started - contains the magic 8 ball project
+0_getting_started - contains the magic 8 ball project and the intro project
 1_python_learning - contains Unit 1 practice and my text choose your adventure game
 2_unit_converter - contains my Unit 2 project: a calculator that converts a number input from one unit of measurement to another
 
