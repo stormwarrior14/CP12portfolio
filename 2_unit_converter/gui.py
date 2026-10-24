@@ -158,10 +158,15 @@ class UnitConverterApp:  # defines the application window
         self.root.bind("<Return>", self.perform_conversion)  # converts on Enter
 
     def perform_conversion(self, event=None):  # handles conversion requests
-        number = float(self.input_value.get())  # converts input text to a number
+        try: 
+            number = float(self.input_value.get())  # converts input text to a number
 
-        result = convert_units(
-            number, self.from_unit.get(), self.to_unit.get()
-        )  # performs conversion
+            result = convert_units(
+                number, self.from_unit.get(), self.to_unit.get()
+            )  # performs conversion
 
-        self.output_value.set(f"{result:.10g}")  # displays formatted result
+            self.output_value.set(f"{result:.10g}")  # displays formatted result
+
+            
+        except ValueError as error: 
+            self.output_value.set(f"Error: {error}")  # displays error message

@@ -60,6 +60,12 @@ def from_base(value, unit):  # converts base value to target unit
 
 def convert_units(value, from_unit, to_unit):  # converts between units
 
+    from_category = UNITS[from_unit][0]
+    to_category = UNITS[to_unit][0]
+
+    if from_category != to_category:  # blocks incompatible conversions
+        raise ValueError("Please select units from the same category.")
+
     base_value = to_base(value, from_unit)  # converts to base unit
     result = from_base(base_value, to_unit)  # converts to target unit
 
