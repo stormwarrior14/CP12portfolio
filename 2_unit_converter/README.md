@@ -14,12 +14,14 @@
 **run_this.py**
 - imports tkinter for gui stuff and creates the main application window
 - Starts the tkinter loop
+  
 **gui.py**
 - sets the application window dimensions and layout
 - a textbox for number input
 - drop down menus for selecting units
 - a "convert" button that runs the coversion
 - an output box for displaying the result
+
 **converter.py**
 - store units and conversion factors
 - organize the units by what they measure (distance, temperature, etc)
@@ -44,5 +46,6 @@ Run "run_this.py" to start the program
 *What changed from your plan, and why.*
 
 ## AI Collaboration
-| What I asked | What came back | What I kept / changed, and why |
-|Asked it to create a dictionary with different units and the conversion factors based on the base unit of that category (length, mass, temperature, volume, time)|a dictionary called "UNITS" containing exactly what i asked|kept the entire dictionary with the units and conversion factors|
+| # | What I asked | What came back | What I kept / changed |
+|---|---|---|---|
+| 1 | Asked it to create a dictionary with different units and the conversion factors based on the base unit of that category (length, mass, temperature, volume, time) | a dictionary called "UNITS" containing exactly what i asked | kept the entire dictionary with the units and conversion factors |
