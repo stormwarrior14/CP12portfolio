@@ -1,5 +1,5 @@
 import time # imports time
-import keyboard #imports keyboard so we can detect keystrokes
+import keyboard #imports keyboard so we can detect keystrokes (make sure to pip install keyboard)
 
 #----------------------------------
 # CHARACTER SETUP STUFF
